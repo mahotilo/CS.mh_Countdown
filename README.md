@@ -1,5 +1,5 @@
 ![](_types/mh_countdown/ui_icon.png)
-# [mh Countdown](https://github.com/mahotilo/CS.mh_Countdown) - Cashed external image. 
+# [mh Countdown](https://github.com/mahotilo/CS.mh_Countdown) - Flip Countdown Timer. 
 ## Section type for CustomSections plugin (Typesetter CMS)
 
 
