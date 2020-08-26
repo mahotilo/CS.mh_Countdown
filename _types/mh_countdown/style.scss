@@ -1,0 +1,22 @@
+.filetype-mh_countdown{
+	position:relative;
+}
+
+.filetype-mh_countdown .countdown-box{
+}
+
+.filetype-mh_countdown .countdown-header{
+	text-align: center;
+	font-weight: bold;
+}
+
+.filetype-mh_countdown .countdown{
+	width: 100%;
+	min-height: 11em;
+}
+
+.filetype-mh_countdown .countdown > div{
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
