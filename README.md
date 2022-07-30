@@ -35,5 +35,9 @@ Wrapper for Simple countdown https://github.com/Dazix/SimpleCountDown
 GPL 2, for bundled thirdparty components see the respective subdirectories.
 
 ## Version history
+* v1.1 
+    - take into account the editor's time zone
+    - countup capability
+	- hide counter's section after the end or before the start moment
 * v1.0 
 	- initial release
