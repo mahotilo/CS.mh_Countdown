@@ -3,8 +3,10 @@ defined('is_running') or die('Not an entry point...');
 /* UKRAINIAN */
 
 $section_lang = array(
-	'end_day'					=>  'Кінцевий день',
-	'end_time'					=>  'Кінцевий час',
+	'D_day'						=>  'День відліку',
+	'T_time'					=>  'Час відліку',
+	'zone'						=>  'Часова зона',
+	'down'						=>  'Зворотній відлік',
 	'year'						=>  'Роки',
 	'week'						=>  'Тижні',
 	'day'						=>  'Дні',

@@ -3,8 +3,10 @@ defined('is_running') or die('Not an entry point...');
 /* ENGLISH */
 
 $section_lang = array(
-	'end_day'					=>  'End day',
-	'end_time'					=>  'End time',
+	'D_day'						=>  'Event day',
+	'T_time'					=>  'Event time',
+	'zone'						=>  'Time zone',
+	'down'						=>  'Countdown',
 	'year'						=>  'Years',
 	'week'						=>  'Weeks',
 	'day'						=>  'Days',

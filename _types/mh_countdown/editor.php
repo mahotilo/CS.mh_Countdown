@@ -9,9 +9,9 @@ $editor = array(
   'custom_css'      => false,
   'controls'        => array(
   
-    // value 'end_day' --start
-    'end_day' => array(
-      'label' => '<i class="fa fa-calendar"></i> '.$editor_lang['end_day'],
+    // value 'D_day' --start
+    'D_day' => array(
+      'label' => '<i class="fa fa-calendar"></i> '.$editor_lang['D_day'],
       'control_type' => 'datepicker',
       'attributes' => array(
         // 'class' => '',
@@ -22,12 +22,12 @@ $editor = array(
         'focus' => 'function(){ $(this).select(); }',
       ),
     ), 
-    // value 'end_day' --end
+    // value 'D_day' --end
 
 
-    // value 'end_time' --start
-    'end_time' => array(
-      'label' => '<i class="fa fa-clock-o"></i> '.$editor_lang['end_time'],
+    // value 'T_time' --start
+    'T_time' => array(
+      'label' => '<i class="fa fa-clock-o"></i> '.$editor_lang['T_time'],
       'control_type' => 'clockpicker',
       'attributes' => array(
         // 'class' => '',
@@ -38,7 +38,37 @@ $editor = array(
         'focus' => 'function(){ $(this).select(); }',
       ),
     ), 
-    // value 'end_time' --end
+    // value 'T_time' --end
+
+
+    // value 'zone' --start
+    'zone' => array(
+      'label' => '<i class="fa fa-clock-o"></i> '.$editor_lang['zone'],
+      'control_type' => 'text',
+      'attributes' => array(
+        // 'class' => '',
+        'readonly' => 'readonly',
+        //'placeholder' => '',
+        // 'pattern' => '', // regex for validation
+      ),
+      'on' => array(
+        'CustomSection:formElementsLoaded' => 'function(){ 
+            $(this).val(Intl.DateTimeFormat().resolvedOptions().timeZone);
+      	 }',
+      ),
+    ), 
+    // value 'zone' --end
+
+
+    // value 'down' --start
+    'down' => array(
+      'label' => ''.$editor_lang['down'],
+      'control_type' => 'checkbox',
+      'attributes' => array(),
+      'on' => array(
+      ),
+    ),
+    // value 'down' --end
 
 
     // value 'years' --start
