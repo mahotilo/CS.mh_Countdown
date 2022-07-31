@@ -40,6 +40,7 @@ $format .= $section['values']['seconds'] ? 'second' : '';
 
 date_default_timezone_set($section['values']['zone']);
 $moment = strtotime($section['values']['D_day'].' '.$section['values']['T_time']);
+date_default_timezone_set('UTC');
 
 //*****automatic detection of direction
 //$date = date_create();
@@ -53,7 +54,7 @@ $section['content']  = '
 		</div>
 		<div class="countdown" style="font-size:{{font-size}}; color:{{font-color}}"
 			data-countdown = "'.$section['values']['down'].'"
-			data-datetime = "'.date('Y-m-d H:i:s',$moment).'"
+			data-datetime = "'.date('Y-m-d H:i:s',$moment).' UTC'.'"
 			data-tyears = "'.$section_lang['year'].'"
 			data-tweeks = "'.$section_lang['week'].'"
 			data-tdays = "'.$section_lang['day'].'"
